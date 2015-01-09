@@ -188,7 +188,7 @@ dispatch_queue_t kBgQueue;
             [self.manager registerKey:RefreshToken forIdentifier:kRefreshTokenIdentifier];
             
         } else {
-            
+            NSLog(@"There was an error with logging in...");
         }
     }];
     

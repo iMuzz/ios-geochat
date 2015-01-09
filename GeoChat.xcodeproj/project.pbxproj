@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		042056FC1A5F994C000AB9C6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */; };
+		042E53801A6081AC001512A7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E537F1A6081AC001512A7 /* ProfileViewController.m */; };
+		042E53831A608211001512A7 /* AddRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E53821A608211001512A7 /* AddRoomViewController.m */; };
 		04A8FF271A5FAED600E638E8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF261A5FAED600E638E8 /* MainViewController.m */; };
 		04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF291A5FAFEC00E638E8 /* GeoChatManager.m */; };
 		04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF2B1A5FAFEC00E638E8 /* GeoChatUser.m */; };
@@ -41,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		042E537E1A6081AC001512A7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		042E537F1A6081AC001512A7 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		042E53811A608211001512A7 /* AddRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRoomViewController.h; sourceTree = "<group>"; };
+		042E53821A608211001512A7 /* AddRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRoomViewController.m; sourceTree = "<group>"; };
 		04A8FF251A5FAED600E638E8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		04A8FF261A5FAED600E638E8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		04A8FF281A5FAFEC00E638E8 /* GeoChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoChatManager.h; sourceTree = "<group>"; };
@@ -170,6 +176,10 @@
 				C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */,
 				04A8FF251A5FAED600E638E8 /* MainViewController.h */,
 				04A8FF261A5FAED600E638E8 /* MainViewController.m */,
+				042E53811A608211001512A7 /* AddRoomViewController.h */,
+				042E53821A608211001512A7 /* AddRoomViewController.m */,
+				042E537E1A6081AC001512A7 /* ProfileViewController.h */,
+				042E537F1A6081AC001512A7 /* ProfileViewController.m */,
 				C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */,
 				C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */,
 				C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */,
@@ -347,7 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */,
+				042E53831A608211001512A7 /* AddRoomViewController.m in Sources */,
 				04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */,
+				042E53801A6081AC001512A7 /* ProfileViewController.m in Sources */,
 				C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */,
 				04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */,
 				C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */,

@@ -30,6 +30,13 @@
     self.fbLoginButton.readPermissions = @[@"public_profile", @"email"];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)didFinishLoggingIn:(NSNotification *)notification
 {
     NSLog(@"%s: %@", __PRETTY_FUNCTION__, notification);
@@ -40,7 +47,6 @@
     NSLog(@"%@", [[[FBSession activeSession] accessTokenData] accessToken]);
     MainViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    
     
     [self presentViewController:navController animated:NO completion:nil];
 }

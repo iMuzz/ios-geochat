@@ -8,8 +8,10 @@
 
 #import <MapKit/MapKit.h>
 #import "MainViewController.h"
+#import "AddRoomViewController.h"
+#import "ProfileViewController.h"
 
-@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate>
+@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *roomItems;
 @property (nonatomic, strong) NSMutableArray *joinedRooms;
@@ -35,6 +37,9 @@
 - (void)addRoom
 {
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    AddRoomViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addRoomView"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)showSettings
@@ -79,16 +84,22 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     switch (buttonIndex) {
-        case 0:
-            NSLog(@"First");
+        case 0: {
+            ProfileViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"profileView"];
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+            [self presentViewController:navController animated:YES completion:nil];
+        }
             break;
             
-        case 1:
-            NSLog(@"Second");
+        case 1: {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logout" message:@"Are you sure you want to logout?" delegate:self cancelButtonTitle:@"Never mind" otherButtonTitles:@"Logout", nil];
+            [alert show];
+        }
             break;
             
-        case 2:
-            NSLog(@"Third");
+        case 2: {
+            NSLog(@"Cancelling action sheet...");
+        }
             break;
             
         default:
@@ -96,5 +107,25 @@
     }
 }
 
+
+#pragma mark - Alert view delegate
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0: {
+            NSLog(@"First");
+        }
+            break;
+            
+        case 1: {
+            NSLog(@"Second");
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 
 @end
