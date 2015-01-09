@@ -1,461 +1,1034 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C43EAFA31A5F543A003638A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */; };
-		C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537C1A5E2A7C00D42F2F /* main.m */; };
-		C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */; };
-		C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */; };
-		C4A253891A5E2A7C00D42F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A253871A5E2A7C00D42F2F /* Main.storyboard */; };
-		C4A2538B1A5E2A7C00D42F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */; };
-		C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */; };
-		C4A2539A1A5E2A7C00D42F2F /* GeoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */; };
-		C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C4A253941A5E2A7C00D42F2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C4A2536F1A5E2A7C00D42F2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4A253761A5E2A7C00D42F2F;
-			remoteInfo = GeoChat;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		C4A253771A5E2A7C00D42F2F /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4A2537B1A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4A2537C1A5E2A7C00D42F2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4A2537E1A5E2A7C00D42F2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4A253821A5E2A7C00D42F2F /* GeoChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoChat.xcdatamodel; sourceTree = "<group>"; };
-		C4A253881A5E2A7C00D42F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C4A2538D1A5E2A7C00D42F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C4A253931A5E2A7C00D42F2F /* GeoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4A253981A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoChatTests.m; sourceTree = "<group>"; };
-		C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C4A253741A5E2A7C00D42F2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C43EAFA31A5F543A003638A1 /* FacebookSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4A253901A5E2A7C00D42F2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C4A2536E1A5E2A7C00D42F2F = {
-			isa = PBXGroup;
-			children = (
-				C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */,
-				C4A253791A5E2A7C00D42F2F /* GeoChat */,
-				C4A253961A5E2A7C00D42F2F /* GeoChatTests */,
-				C4A253781A5E2A7C00D42F2F /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C4A253781A5E2A7C00D42F2F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C4A253771A5E2A7C00D42F2F /* GeoChat.app */,
-				C4A253931A5E2A7C00D42F2F /* GeoChatTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C4A253791A5E2A7C00D42F2F /* GeoChat */ = {
-			isa = PBXGroup;
-			children = (
-				C4A2537E1A5E2A7C00D42F2F /* AppDelegate.h */,
-				C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */,
-				C4A253871A5E2A7C00D42F2F /* Main.storyboard */,
-				C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */,
-				C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */,
-				C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */,
-				C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */,
-				C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */,
-				C4A2537A1A5E2A7C00D42F2F /* Supporting Files */,
-			);
-			path = GeoChat;
-			sourceTree = "<group>";
-		};
-		C4A2537A1A5E2A7C00D42F2F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4A2537B1A5E2A7C00D42F2F /* Info.plist */,
-				C4A2537C1A5E2A7C00D42F2F /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C4A253961A5E2A7C00D42F2F /* GeoChatTests */ = {
-			isa = PBXGroup;
-			children = (
-				C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */,
-				C4A253971A5E2A7C00D42F2F /* Supporting Files */,
-			);
-			path = GeoChatTests;
-			sourceTree = "<group>";
-		};
-		C4A253971A5E2A7C00D42F2F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4A253981A5E2A7C00D42F2F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C4A253761A5E2A7C00D42F2F /* GeoChat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4A2539D1A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChat" */;
-			buildPhases = (
-				C4A253731A5E2A7C00D42F2F /* Sources */,
-				C4A253741A5E2A7C00D42F2F /* Frameworks */,
-				C4A253751A5E2A7C00D42F2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GeoChat;
-			productName = GeoChat;
-			productReference = C4A253771A5E2A7C00D42F2F /* GeoChat.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C4A253921A5E2A7C00D42F2F /* GeoChatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4A253A01A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChatTests" */;
-			buildPhases = (
-				C4A2538F1A5E2A7C00D42F2F /* Sources */,
-				C4A253901A5E2A7C00D42F2F /* Frameworks */,
-				C4A253911A5E2A7C00D42F2F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C4A253951A5E2A7C00D42F2F /* PBXTargetDependency */,
-			);
-			name = GeoChatTests;
-			productName = GeoChatTests;
-			productReference = C4A253931A5E2A7C00D42F2F /* GeoChatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C4A2536F1A5E2A7C00D42F2F /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = MosRedRocket;
-				TargetAttributes = {
-					C4A253761A5E2A7C00D42F2F = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 3K93EXS2KS;
-					};
-					C4A253921A5E2A7C00D42F2F = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = C4A253761A5E2A7C00D42F2F;
-					};
-				};
-			};
-			buildConfigurationList = C4A253721A5E2A7C00D42F2F /* Build configuration list for PBXProject "GeoChat" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C4A2536E1A5E2A7C00D42F2F;
-			productRefGroup = C4A253781A5E2A7C00D42F2F /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C4A253761A5E2A7C00D42F2F /* GeoChat */,
-				C4A253921A5E2A7C00D42F2F /* GeoChatTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C4A253751A5E2A7C00D42F2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4A253891A5E2A7C00D42F2F /* Main.storyboard in Resources */,
-				C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */,
-				C4A2538B1A5E2A7C00D42F2F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4A253911A5E2A7C00D42F2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C4A253731A5E2A7C00D42F2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */,
-				C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */,
-				C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */,
-				C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4A2538F1A5E2A7C00D42F2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4A2539A1A5E2A7C00D42F2F /* GeoChatTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C4A253951A5E2A7C00D42F2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C4A253761A5E2A7C00D42F2F /* GeoChat */;
-			targetProxy = C4A253941A5E2A7C00D42F2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C4A253871A5E2A7C00D42F2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4A253881A5E2A7C00D42F2F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4A2538D1A5E2A7C00D42F2F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C4A2539B1A5E2A7C00D42F2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C4A2539C1A5E2A7C00D42F2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C4A2539E1A5E2A7C00D42F2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/iMuzz/Documents/FacebookSDK,
-				);
-				INFOPLIST_FILE = GeoChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C4A2539F1A5E2A7C00D42F2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/iMuzz/Documents/FacebookSDK,
-				);
-				INFOPLIST_FILE = GeoChat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C4A253A11A5E2A7C00D42F2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GeoChatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat";
-			};
-			name = Debug;
-		};
-		C4A253A21A5E2A7C00D42F2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GeoChatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C4A253721A5E2A7C00D42F2F /* Build configuration list for PBXProject "GeoChat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4A2539B1A5E2A7C00D42F2F /* Debug */,
-				C4A2539C1A5E2A7C00D42F2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4A2539D1A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4A2539E1A5E2A7C00D42F2F /* Debug */,
-				C4A2539F1A5E2A7C00D42F2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4A253A01A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4A253A11A5E2A7C00D42F2F /* Debug */,
-				C4A253A21A5E2A7C00D42F2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C4A253821A5E2A7C00D42F2F /* GeoChat.xcdatamodel */,
-			);
-			currentVersion = C4A253821A5E2A7C00D42F2F /* GeoChat.xcdatamodel */;
-			path = GeoChat.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = C4A2536F1A5E2A7C00D42F2F /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>394E9B597F69A8CA76DA5116</key>
+		<dict>
+			<key>fileRef</key>
+			<string>584A0BA6B99BBCCA0CE55303</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3A50506AB4F669765F22D8DD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>584A0BA6B99BBCCA0CE55303</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-GeoChat.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6700962ED9C10AACC54D7E75</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-GeoChat.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DC68CAADA079E31E4EC3203</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-GeoChat.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC7548F76951861D2B557935</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7DC68CAADA079E31E4EC3203</string>
+				<string>6700962ED9C10AACC54D7E75</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C43EAFA21A5F543A003638A1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FacebookSDK.framework</string>
+			<key>path</key>
+			<string>../../FacebookSDK/FacebookSDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C43EAFA31A5F543A003638A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C43EAFA21A5F543A003638A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2536E1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C43EAFA21A5F543A003638A1</string>
+				<string>C4A253791A5E2A7C00D42F2F</string>
+				<string>C4A253961A5E2A7C00D42F2F</string>
+				<string>C4A253781A5E2A7C00D42F2F</string>
+				<string>BC7548F76951861D2B557935</string>
+				<string>D161FDF2C3C6E41725568939</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2536F1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>MosRedRocket</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C4A253761A5E2A7C00D42F2F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>DevelopmentTeam</key>
+						<string>3K93EXS2KS</string>
+					</dict>
+					<key>C4A253921A5E2A7C00D42F2F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>TestTargetID</key>
+						<string>C4A253761A5E2A7C00D42F2F</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C4A253721A5E2A7C00D42F2F</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C4A2536E1A5E2A7C00D42F2F</string>
+			<key>productRefGroup</key>
+			<string>C4A253781A5E2A7C00D42F2F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C4A253761A5E2A7C00D42F2F</string>
+				<string>C4A253921A5E2A7C00D42F2F</string>
+			</array>
+		</dict>
+		<key>C4A253721A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C4A2539B1A5E2A7C00D42F2F</string>
+				<string>C4A2539C1A5E2A7C00D42F2F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C4A253731A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C4A253AD1A5E4C0900D42F2F</string>
+				<string>C4A253801A5E2A7C00D42F2F</string>
+				<string>C4A253831A5E2A7C00D42F2F</string>
+				<string>C4A2537D1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253741A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C43EAFA31A5F543A003638A1</string>
+				<string>394E9B597F69A8CA76DA5116</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253751A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C4A253891A5E2A7C00D42F2F</string>
+				<string>C4A2538E1A5E2A7C00D42F2F</string>
+				<string>C4A2538B1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253761A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C4A2539D1A5E2A7C00D42F2F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C8E9B94561D5B0FA4DB44700</string>
+				<string>C4A253731A5E2A7C00D42F2F</string>
+				<string>C4A253741A5E2A7C00D42F2F</string>
+				<string>C4A253751A5E2A7C00D42F2F</string>
+				<string>3A50506AB4F669765F22D8DD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GeoChat</string>
+			<key>productName</key>
+			<string>GeoChat</string>
+			<key>productReference</key>
+			<string>C4A253771A5E2A7C00D42F2F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C4A253771A5E2A7C00D42F2F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GeoChat.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C4A253781A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A253771A5E2A7C00D42F2F</string>
+				<string>C4A253931A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253791A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A2537E1A5E2A7C00D42F2F</string>
+				<string>C4A2537F1A5E2A7C00D42F2F</string>
+				<string>C4A253871A5E2A7C00D42F2F</string>
+				<string>C4A253AB1A5E4C0900D42F2F</string>
+				<string>C4A253AC1A5E4C0900D42F2F</string>
+				<string>C4A2538A1A5E2A7C00D42F2F</string>
+				<string>C4A2538C1A5E2A7C00D42F2F</string>
+				<string>C4A253811A5E2A7C00D42F2F</string>
+				<string>C4A2537A1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GeoChat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2537A1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A2537B1A5E2A7C00D42F2F</string>
+				<string>C4A2537C1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2537B1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2537C1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2537D1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A2537C1A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2537E1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2537F1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253801A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A2537F1A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A253811A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A253821A5E2A7C00D42F2F</string>
+			</array>
+			<key>currentVersion</key>
+			<string>C4A253821A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>GeoChat.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>C4A253821A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>GeoChat.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253831A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A253811A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A253871A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A253881A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253881A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253891A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A253871A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2538A1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2538B1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A2538A1A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2538C1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A2538D1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2538D1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2538E1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A2538C1A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2538F1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C4A2539A1A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253901A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253911A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4A253921A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C4A253A01A5E2A7C00D42F2F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C4A2538F1A5E2A7C00D42F2F</string>
+				<string>C4A253901A5E2A7C00D42F2F</string>
+				<string>C4A253911A5E2A7C00D42F2F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C4A253951A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GeoChatTests</string>
+			<key>productName</key>
+			<string>GeoChatTests</string>
+			<key>productReference</key>
+			<string>C4A253931A5E2A7C00D42F2F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C4A253931A5E2A7C00D42F2F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GeoChatTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C4A253941A5E2A7C00D42F2F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C4A2536F1A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C4A253761A5E2A7C00D42F2F</string>
+			<key>remoteInfo</key>
+			<string>GeoChat</string>
+		</dict>
+		<key>C4A253951A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C4A253761A5E2A7C00D42F2F</string>
+			<key>targetProxy</key>
+			<string>C4A253941A5E2A7C00D42F2F</string>
+		</dict>
+		<key>C4A253961A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A253991A5E2A7C00D42F2F</string>
+				<string>C4A253971A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GeoChatTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253971A5E2A7C00D42F2F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4A253981A5E2A7C00D42F2F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253981A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253991A5E2A7C00D42F2F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GeoChatTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A2539A1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A253991A5E2A7C00D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4A2539B1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C4A2539C1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C4A2539D1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C4A2539E1A5E2A7C00D42F2F</string>
+				<string>C4A2539F1A5E2A7C00D42F2F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C4A2539E1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7DC68CAADA079E31E4EC3203</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/iMuzz/Documents/FacebookSDK</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoChat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C4A2539F1A5E2A7C00D42F2F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6700962ED9C10AACC54D7E75</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/iMuzz/Documents/FacebookSDK</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoChat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C4A253A01A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C4A253A11A5E2A7C00D42F2F</string>
+				<string>C4A253A21A5E2A7C00D42F2F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C4A253A11A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoChatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C4A253A21A5E2A7C00D42F2F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoChatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C4A253AB1A5E4C0900D42F2F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LoginViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253AC1A5E4C0900D42F2F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LoginViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4A253AD1A5E4C0900D42F2F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C4A253AC1A5E4C0900D42F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C8E9B94561D5B0FA4DB44700</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D161FDF2C3C6E41725568939</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>584A0BA6B99BBCCA0CE55303</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C4A2536F1A5E2A7C00D42F2F</string>
+</dict>
+</plist>
