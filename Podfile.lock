@@ -2,12 +2,15 @@ PODS:
   - JSQMessagesViewController (6.1.1):
     - JSQSystemSoundPlayer (~> 2.0.0)
   - JSQSystemSoundPlayer (2.0.0)
+  - UYLPasswordManager (1.1.0)
 
 DEPENDENCIES:
   - JSQMessagesViewController
+  - UYLPasswordManager (~> 1.1)
 
 SPEC CHECKSUMS:
   JSQMessagesViewController: 84a5823a1f6a4f29ee6d4db0ea4b9d63876be4ee
   JSQSystemSoundPlayer: c98443b1cbb3b45db09d0d3d6c2355cf78294981
+  UYLPasswordManager: 9b826c51bf0eb8cfd5663e01afa74ccbdbcd69b8
 
 COCOAPODS: 0.35.0

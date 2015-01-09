@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45AE4E4B66D82D1DBA448137"
+               BlueprintIdentifier = "8268FFAE498BFAB0A6725CD6"
                BuildableName = "libPods-GeoChat-JSQMessagesViewController.a"
                BlueprintName = "Pods-GeoChat-JSQMessagesViewController"
                ReferencedContainer = "container:Pods.xcodeproj">

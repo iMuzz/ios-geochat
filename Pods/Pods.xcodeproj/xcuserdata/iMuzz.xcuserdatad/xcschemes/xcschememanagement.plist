@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GeoChat-UYLPasswordManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GeoChat.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FE67D40D1CBF21C47D72CCE</key>
+		<key>187ADC767E8862983A6F1739</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45AE4E4B66D82D1DBA448137</key>
+		<key>1C32DDC761639351DAF18131</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BCEBF868CBE101FE00536F6</key>
+		<key>8268FFAE498BFAB0A6725CD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2968A277F4F7E1C149E92B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

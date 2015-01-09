@@ -6,7 +6,9 @@
 //  Copyright (c) 2015 MosRedRocket. All rights reserved.
 //
 #import <FacebookSDK/FacebookSDK.h>
+#import <UYLPasswordManager/UYLPasswordManager.h>
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 

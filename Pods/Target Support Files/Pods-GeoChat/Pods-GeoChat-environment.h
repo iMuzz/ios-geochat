@@ -18,3 +18,9 @@
 #define COCOAPODS_VERSION_MINOR_JSQSystemSoundPlayer 0
 #define COCOAPODS_VERSION_PATCH_JSQSystemSoundPlayer 0
 
+// UYLPasswordManager
+#define COCOAPODS_POD_AVAILABLE_UYLPasswordManager
+#define COCOAPODS_VERSION_MAJOR_UYLPasswordManager 1
+#define COCOAPODS_VERSION_MINOR_UYLPasswordManager 1
+#define COCOAPODS_VERSION_PATCH_UYLPasswordManager 0
+
