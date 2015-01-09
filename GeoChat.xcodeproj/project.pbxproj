@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C43EAFA31A5F543A003638A1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */; };
 		C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537C1A5E2A7C00D42F2F /* main.m */; };
 		C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */; };
 		C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */; };
@@ -14,7 +15,6 @@
 		C4A2538B1A5E2A7C00D42F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */; };
 		C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */; };
 		C4A2539A1A5E2A7C00D42F2F /* GeoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */; };
-		C4A253A71A5E4A1D00D42F2F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */; };
 		C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C4A253771A5E2A7C00D42F2F /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A2537B1A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A2537C1A5E2A7C00D42F2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		C4A253931A5E2A7C00D42F2F /* GeoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A253981A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoChatTests.m; sourceTree = "<group>"; };
-		C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A253A71A5E4A1D00D42F2F /* FacebookSDK.framework in Frameworks */,
+				C43EAFA31A5F543A003638A1 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		C4A2536E1A5E2A7C00D42F2F = {
 			isa = PBXGroup;
 			children = (
-				C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */,
+				C43EAFA21A5F543A003638A1 /* FacebookSDK.framework */,
 				C4A253791A5E2A7C00D42F2F /* GeoChat */,
 				C4A253961A5E2A7C00D42F2F /* GeoChatTests */,
 				C4A253781A5E2A7C00D42F2F /* Products */,
@@ -431,6 +431,7 @@
 				C4A2539F1A5E2A7C00D42F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A253A01A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChatTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +440,7 @@
 				C4A253A21A5E2A7C00D42F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
