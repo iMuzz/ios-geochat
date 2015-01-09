@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 MosRedRocket. All rights reserved.
 //
 
-#import "LoginViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "LoginViewController.h"
+#import "MainViewController.h"
+#import "GeoChatManager.h"
 
 @interface LoginViewController () <FBLoginViewDelegate>
 
@@ -22,33 +24,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFinishLoggingIn:) name:@"didFinishLoggingIn" object:nil];
+    
     self.fbLoginButton.delegate = self;
     self.fbLoginButton.readPermissions = @[@"public_profile", @"email"];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)didFinishLoggingIn:(NSNotification *)notification
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"%s: %@", __PRETTY_FUNCTION__, notification);
 }
 
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
     NSLog(@"%@", [[[FBSession activeSession] accessTokenData] accessToken]);
+    MainViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    
+    [self presentViewController:navController animated:NO completion:nil];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
 {
-    //
+    NSLog(@"%s", __PRETTY_FUNCTION__);
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

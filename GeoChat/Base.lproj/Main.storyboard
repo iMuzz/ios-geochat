@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Rl-EF-Pdm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -26,38 +28,33 @@
         <!--Login View Controller-->
         <scene sceneID="eNf-KD-Shr">
             <objects>
-                <viewController id="3Rl-EF-Pdm" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" id="3Rl-EF-Pdm" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="660-ud-qd7"/>
                         <viewControllerLayoutGuide type="bottom" id="xp3-tj-7Ev"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GSr-KQ-4qZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FD-bS-g1D" customClass="FBLoginView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="200" y="380" width="200" height="40"/>
-                                </variation>
-                                <connections>
-                                    <outlet property="delegate" destination="3Rl-EF-Pdm" id="3YU-8x-8ZN"/>
-                                </connections>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0M-UJ-eZL" customClass="FBLoginView">
+                                <rect key="frame" x="200" y="280" width="200" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n0M-UJ-eZL" secondAttribute="height" multiplier="5:1" id="dGQ-1t-aaK"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="7FD-bS-g1D"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="7FD-bS-g1D"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="n0M-UJ-eZL" secondAttribute="trailing" constant="184" id="5XV-EV-LPL"/>
+                            <constraint firstItem="n0M-UJ-eZL" firstAttribute="top" secondItem="660-ud-qd7" secondAttribute="bottom" constant="260" id="7Mx-4b-zze"/>
+                            <constraint firstItem="n0M-UJ-eZL" firstAttribute="leading" secondItem="GSr-KQ-4qZ" secondAttribute="leadingMargin" constant="184" id="IYm-JD-Gpp"/>
+                            <constraint firstItem="xp3-tj-7Ev" firstAttribute="top" secondItem="n0M-UJ-eZL" secondAttribute="bottom" constant="280" id="xlX-qh-mJs"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="fbLoginButton" destination="7FD-bS-g1D" id="nUV-6o-be5"/>
+                        <outlet property="fbLoginButton" destination="n0M-UJ-eZL" id="Jj2-qv-TE8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DL2-DD-3Uu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -67,7 +64,7 @@
         <!--List-->
         <scene sceneID="Sso-y0-rbE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AmP-Il-J6b" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNav" automaticallyAdjustsScrollViewInsets="NO" id="AmP-Il-J6b" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" id="n5h-vY-B8k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mjs-5w-maA">
@@ -80,11 +77,12 @@
             </objects>
             <point key="canvasLocation" x="56" y="-883"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="WEy-4x-XaS">
             <objects>
-                <tableViewController id="5eh-LR-fp4" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mainView" id="5eh-LR-fp4" customClass="MainViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="J8D-XO-2rA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -108,7 +106,7 @@
         <!--Map-->
         <scene sceneID="03k-4v-1qM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mvr-zp-BIW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mapNav" automaticallyAdjustsScrollViewInsets="NO" id="Mvr-zp-BIW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" id="IQY-db-1OL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cvh-cH-Jow">
@@ -124,12 +122,13 @@
         <!--View Controller-->
         <scene sceneID="xYZ-Qs-JGd">
             <objects>
-                <viewController id="auq-oL-DVe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapView" id="auq-oL-DVe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIW-nO-4sk"/>
                         <viewControllerLayoutGuide type="bottom" id="8hz-fj-1uh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gSP-lk-hYo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

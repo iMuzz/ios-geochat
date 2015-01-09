@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-GeoChat-JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GeoChat-JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GeoChat-NSHash.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GeoChat-UYLPasswordManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GeoChat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>50C35359E2348AFA04E48964</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51A899A2A45C476DB5742516</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8CAB923F7FCB6BA8940D848F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E755DD755496B8D1B8CD3522</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4697F03EF14F71D0AB0B65D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

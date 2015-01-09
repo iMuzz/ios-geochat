@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042056FC1A5F994C000AB9C6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */; };
+		04A8FF271A5FAED600E638E8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF261A5FAED600E638E8 /* MainViewController.m */; };
+		04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF291A5FAFEC00E638E8 /* GeoChatManager.m */; };
+		04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF2B1A5FAFEC00E638E8 /* GeoChatUser.m */; };
+		04A8FF301A5FB25600E638E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A8FF2F1A5FB25600E638E8 /* MapKit.framework */; };
+		04A8FF371A5FB3DF00E638E8 /* actions-ellipse.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF311A5FB3DF00E638E8 /* actions-ellipse.png */; };
+		04A8FF381A5FB3DF00E638E8 /* actions-ellipse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF321A5FB3DF00E638E8 /* actions-ellipse@2x.png */; };
+		04A8FF391A5FB3DF00E638E8 /* actions-ellipse@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF331A5FB3DF00E638E8 /* actions-ellipse@3x.png */; };
+		04A8FF3A1A5FB3DF00E638E8 /* System-settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF341A5FB3DF00E638E8 /* System-settings-icon.png */; };
+		04A8FF3B1A5FB3DF00E638E8 /* System-settings-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF351A5FB3DF00E638E8 /* System-settings-icon@2x.png */; };
+		04A8FF3C1A5FB3DF00E638E8 /* System-settings-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF361A5FB3DF00E638E8 /* System-settings-icon@3x.png */; };
+		21E8D90797A866748C2DD0C8 /* libPods-GeoChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */; };
 		C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537C1A5E2A7C00D42F2F /* main.m */; };
 		C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */; };
 		C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */; };
@@ -14,7 +26,6 @@
 		C4A2538B1A5E2A7C00D42F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */; };
 		C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */; };
 		C4A2539A1A5E2A7C00D42F2F /* GeoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */; };
-		C4A253A71A5E4A1D00D42F2F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */; };
 		C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		04A8FF251A5FAED600E638E8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		04A8FF261A5FAED600E638E8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		04A8FF281A5FAFEC00E638E8 /* GeoChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoChatManager.h; sourceTree = "<group>"; };
+		04A8FF291A5FAFEC00E638E8 /* GeoChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoChatManager.m; sourceTree = "<group>"; };
+		04A8FF2A1A5FAFEC00E638E8 /* GeoChatUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoChatUser.h; sourceTree = "<group>"; };
+		04A8FF2B1A5FAFEC00E638E8 /* GeoChatUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoChatUser.m; sourceTree = "<group>"; };
+		04A8FF2F1A5FB25600E638E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04A8FF311A5FB3DF00E638E8 /* actions-ellipse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actions-ellipse.png"; sourceTree = "<group>"; };
+		04A8FF321A5FB3DF00E638E8 /* actions-ellipse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actions-ellipse@2x.png"; sourceTree = "<group>"; };
+		04A8FF331A5FB3DF00E638E8 /* actions-ellipse@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actions-ellipse@3x.png"; sourceTree = "<group>"; };
+		04A8FF341A5FB3DF00E638E8 /* System-settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "System-settings-icon.png"; sourceTree = "<group>"; };
+		04A8FF351A5FB3DF00E638E8 /* System-settings-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "System-settings-icon@2x.png"; sourceTree = "<group>"; };
+		04A8FF361A5FB3DF00E638E8 /* System-settings-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "System-settings-icon@3x.png"; sourceTree = "<group>"; };
+		354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62FCA1D7E2C900FECDC0FF4 /* Pods-GeoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		BECA7C351FEDD1FD50636D0C /* Pods-GeoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.release.xcconfig"; sourceTree = "<group>"; };
 		C4A253771A5E2A7C00D42F2F /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A2537B1A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A2537C1A5E2A7C00D42F2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +69,6 @@
 		C4A253931A5E2A7C00D42F2F /* GeoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A253981A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoChatTests.m; sourceTree = "<group>"; };
-		C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A253A71A5E4A1D00D42F2F /* FacebookSDK.framework in Frameworks */,
+				04A8FF301A5FB25600E638E8 /* MapKit.framework in Frameworks */,
+				042056FC1A5F994C000AB9C6 /* FacebookSDK.framework in Frameworks */,
+				21E8D90797A866748C2DD0C8 /* libPods-GeoChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,13 +94,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A8FF2E1A5FAFF600E638E8 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04A8FF281A5FAFEC00E638E8 /* GeoChatManager.h */,
+				04A8FF291A5FAFEC00E638E8 /* GeoChatManager.m */,
+				04A8FF2A1A5FAFEC00E638E8 /* GeoChatUser.h */,
+				04A8FF2B1A5FAFEC00E638E8 /* GeoChatUser.m */,
+			);
+			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		04A8FF3D1A5FB3EA00E638E8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				04A8FF311A5FB3DF00E638E8 /* actions-ellipse.png */,
+				04A8FF321A5FB3DF00E638E8 /* actions-ellipse@2x.png */,
+				04A8FF331A5FB3DF00E638E8 /* actions-ellipse@3x.png */,
+				04A8FF341A5FB3DF00E638E8 /* System-settings-icon.png */,
+				04A8FF351A5FB3DF00E638E8 /* System-settings-icon@2x.png */,
+				04A8FF361A5FB3DF00E638E8 /* System-settings-icon@3x.png */,
+			);
+			name = images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6C350E6DFDEB1D7EA293C759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A62FCA1D7E2C900FECDC0FF4 /* Pods-GeoChat.debug.xcconfig */,
+				BECA7C351FEDD1FD50636D0C /* Pods-GeoChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F71389B54F19EAC2F83DBA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04A8FF2F1A5FB25600E638E8 /* MapKit.framework */,
+				042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */,
+				354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4A2536E1A5E2A7C00D42F2F = {
 			isa = PBXGroup;
 			children = (
-				C4A253A61A5E4A1D00D42F2F /* FacebookSDK.framework */,
 				C4A253791A5E2A7C00D42F2F /* GeoChat */,
 				C4A253961A5E2A7C00D42F2F /* GeoChatTests */,
 				C4A253781A5E2A7C00D42F2F /* Products */,
+				6C350E6DFDEB1D7EA293C759 /* Pods */,
+				6F71389B54F19EAC2F83DBA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,11 +161,15 @@
 		C4A253791A5E2A7C00D42F2F /* GeoChat */ = {
 			isa = PBXGroup;
 			children = (
+				04A8FF3D1A5FB3EA00E638E8 /* images */,
+				04A8FF2E1A5FAFF600E638E8 /* API Manager */,
 				C4A2537E1A5E2A7C00D42F2F /* AppDelegate.h */,
 				C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */,
 				C4A253871A5E2A7C00D42F2F /* Main.storyboard */,
 				C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */,
 				C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */,
+				04A8FF251A5FAED600E638E8 /* MainViewController.h */,
+				04A8FF261A5FAED600E638E8 /* MainViewController.m */,
 				C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */,
 				C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */,
 				C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */,
@@ -133,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A2539D1A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChat" */;
 			buildPhases = (
+				12557740ADF28887AACDD767 /* Check Pods Manifest.lock */,
 				C4A253731A5E2A7C00D42F2F /* Sources */,
 				C4A253741A5E2A7C00D42F2F /* Frameworks */,
 				C4A253751A5E2A7C00D42F2F /* Resources */,
+				5F71A1011F6E037E23BC6273 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,8 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A253891A5E2A7C00D42F2F /* Main.storyboard in Resources */,
+				04A8FF3B1A5FB3DF00E638E8 /* System-settings-icon@2x.png in Resources */,
 				C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */,
+				04A8FF3C1A5FB3DF00E638E8 /* System-settings-icon@3x.png in Resources */,
+				04A8FF3A1A5FB3DF00E638E8 /* System-settings-icon.png in Resources */,
+				04A8FF391A5FB3DF00E638E8 /* actions-ellipse@3x.png in Resources */,
+				04A8FF371A5FB3DF00E638E8 /* actions-ellipse.png in Resources */,
 				C4A2538B1A5E2A7C00D42F2F /* Images.xcassets in Resources */,
+				04A8FF381A5FB3DF00E638E8 /* actions-ellipse@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,14 +308,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12557740ADF28887AACDD767 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F71A1011F6E037E23BC6273 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4A253731A5E2A7C00D42F2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */,
+				04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */,
 				C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */,
+				04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */,
 				C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */,
+				04A8FF271A5FAED600E638E8 /* MainViewController.m in Sources */,
 				C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,31 +472,39 @@
 		};
 		C4A2539E1A5E2A7C00D42F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62FCA1D7E2C900FECDC0FF4 /* Pods-GeoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/iMuzz/Documents/FacebookSDK,
+					/Users/mac/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = GeoChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		C4A2539F1A5E2A7C00D42F2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECA7C351FEDD1FD50636D0C /* Pods-GeoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/iMuzz/Documents/FacebookSDK,
+					/Users/mac/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = GeoChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -431,6 +561,7 @@
 				C4A2539F1A5E2A7C00D42F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A253A01A5E2A7C00D42F2F /* Build configuration list for PBXNativeTarget "GeoChatTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +570,7 @@
 				C4A253A21A5E2A7C00D42F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

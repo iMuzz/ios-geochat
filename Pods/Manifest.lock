@@ -1,0 +1,19 @@
+PODS:
+  - JSQMessagesViewController (6.1.1):
+    - JSQSystemSoundPlayer (~> 2.0.0)
+  - JSQSystemSoundPlayer (2.0.0)
+  - NSHash (1.0.1)
+  - UYLPasswordManager (1.1.0)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - NSHash (~> 1.0.1)
+  - UYLPasswordManager (~> 1.1)
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 84a5823a1f6a4f29ee6d4db0ea4b9d63876be4ee
+  JSQSystemSoundPlayer: c98443b1cbb3b45db09d0d3d6c2355cf78294981
+  NSHash: 757e3ba784954b730eae472f3f4e12eb79a18d82
+  UYLPasswordManager: 9b826c51bf0eb8cfd5663e01afa74ccbdbcd69b8
+
+COCOAPODS: 0.35.0
