@@ -9,6 +9,7 @@
 #import <UYLPasswordManager/UYLPasswordManager.h>
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,14 @@
 {
     // Override point for customization after application launch.
     [FBLoginView class];
+    
+    UYLPasswordManager *manager = [UYLPasswordManager sharedInstance];
+    
+    BOOL loggedIn = [manager validKey:nil forIdentifier:@"accessToken"];
+    
+    NSString *storyboardID = loggedIn ? @"loginView" : @"mainView";
+    
+    self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID];
     
     return YES;
 }

@@ -19,6 +19,7 @@
 		C4A2538E1A5E2A7C00D42F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */; };
 		C4A2539A1A5E2A7C00D42F2F /* GeoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */; };
 		C4A253AD1A5E4C0900D42F2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */; };
+		C4E55C321A5F6CE4005AC499 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E55C311A5F6CE4005AC499 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C4A253991A5E2A7C00D42F2F /* GeoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoChatTests.m; sourceTree = "<group>"; };
 		C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C4E55C301A5F6CE4005AC499 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C4E55C311A5F6CE4005AC499 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				C4A253871A5E2A7C00D42F2F /* Main.storyboard */,
 				C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */,
 				C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */,
+				C4E55C301A5F6CE4005AC499 /* MainViewController.h */,
+				C4E55C311A5F6CE4005AC499 /* MainViewController.m */,
 				C4A2538A1A5E2A7C00D42F2F /* Images.xcassets */,
 				C4A2538C1A5E2A7C00D42F2F /* LaunchScreen.xib */,
 				C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */,
@@ -308,6 +313,7 @@
 				C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */,
 				C43EAFA91A5F5748003638A1 /* GeoChatUser.m in Sources */,
 				C43EAFA81A5F5748003638A1 /* GeoChatManager.m in Sources */,
+				C4E55C321A5F6CE4005AC499 /* MainViewController.m in Sources */,
 				C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */,
 				C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */,
 			);
