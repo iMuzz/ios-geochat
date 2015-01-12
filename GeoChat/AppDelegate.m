@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 MosRedRocket. All rights reserved.
 //
 #import <FacebookSDK/FacebookSDK.h>
-#import <UYLPasswordManager/UYLPasswordManager.h>
+#import <AFOAuth2Manager/AFOAuth2Manager.h>
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "MainViewController.h"
@@ -23,14 +23,14 @@
     // Override point for customization after application launch.
     [FBLoginView class];
     
-    UYLPasswordManager *manager = [UYLPasswordManager sharedInstance];
+    BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
     
-    BOOL loggedIn = [manager validKey:nil forIdentifier:@"accessToken"];
+    NSString *storyboardID = credAvailable ? @"mainView" : @"loginView";
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
     
-    NSString *storyboardID = loggedIn ? @"mainView" : @"loginView";
+    self.window.rootViewController = navController;
     
-    self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID];
-    
+     
     return YES;
 }
 

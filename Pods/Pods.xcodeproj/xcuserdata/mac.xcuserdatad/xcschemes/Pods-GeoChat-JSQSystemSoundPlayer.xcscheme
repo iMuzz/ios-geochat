@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51A899A2A45C476DB5742516"
+               BlueprintIdentifier = "22632F757FE17C9861C24623"
                BuildableName = "libPods-GeoChat-JSQSystemSoundPlayer.a"
                BlueprintName = "Pods-GeoChat-JSQSystemSoundPlayer"
                ReferencedContainer = "container:Pods.xcodeproj">

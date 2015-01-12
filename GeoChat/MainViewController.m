@@ -7,6 +7,9 @@
 //
 
 #import <MapKit/MapKit.h>
+#import <AFOAuth2Manager/AFOAuth2Manager.h>
+#import "GeoChatAPIManager.h"
+#import "LoginViewController.h"
 #import "MainViewController.h"
 #import "AddRoomViewController.h"
 #import "ProfileViewController.h"
@@ -28,10 +31,17 @@
     
     self.title = @"GeoChat!";
     
+    self.navigationController.navigationBarHidden = NO;
+    
+    UIColor *color = [UIColor colorWithRed:196.0f green:245.0f blue:233.0f alpha:1.0f];
+    
+    self.view.backgroundColor = color;
+    
     self.roomItems = [@[@{@"room_name" : @"test room", @"distance" : @"0.05"}, @{@"room_name" : @"test room 2", @"distance" : @"0.07"}] mutableCopy];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"System-settings-icon"] style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addRoom)];
+    
 }
 
 - (void)addRoom
@@ -39,7 +49,7 @@
     NSLog(@"%s", __PRETTY_FUNCTION__);
     AddRoomViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addRoomView"];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    [self presentViewController:navController animated:YES completion:nil];
+    [self.navigationController presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)showSettings
@@ -87,7 +97,7 @@
         case 0: {
             ProfileViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"profileView"];
             UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-            [self presentViewController:navController animated:YES completion:nil];
+            [self.navigationController presentViewController:navController animated:YES completion:nil];
         }
             break;
             
@@ -120,6 +130,14 @@
             
         case 1: {
             NSLog(@"Second");
+            [[FBSession activeSession] closeAndClearTokenInformation];
+            if ([AFOAuthCredential deleteCredentialWithIdentifier:@"OAuthTokenIdentifier"]) {
+                LoginViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
+                [self.navigationController presentViewController:controller animated:NO completion:nil];
+            } else {
+                NSLog(@"Something went wrong with deleting the credentials...");
+            }
+            
         }
             break;
             

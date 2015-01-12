@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-GeoChat-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GeoChat-AFOAuth2Manager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GeoChat-JSQMessagesViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-GeoChat-UYLPasswordManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-GeoChat.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50C35359E2348AFA04E48964</key>
+		<key>0534709BB14F9C83C0C093A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51A899A2A45C476DB5742516</key>
+		<key>22632F757FE17C9861C24623</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CAB923F7FCB6BA8940D848F</key>
+		<key>4C78EA7B90C772D072EF0511</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E755DD755496B8D1B8CD3522</key>
+		<key>65D9E70B2A05CE279E68344B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4697F03EF14F71D0AB0B65D</key>
+		<key>741C362C1824B08592638203</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4DC179AA8FA55AF41265107</key>
 		<dict>
 			<key>primary</key>
 			<true/>

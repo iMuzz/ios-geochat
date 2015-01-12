@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4697F03EF14F71D0AB0B65D"
+               BlueprintIdentifier = "F4DC179AA8FA55AF41265107"
                BuildableName = "libPods-GeoChat.a"
                BlueprintName = "Pods-GeoChat"
                ReferencedContainer = "container:Pods.xcodeproj">

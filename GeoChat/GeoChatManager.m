@@ -23,7 +23,6 @@
 
 
 #import "GeoChatManager.h"
-#import "UYLPasswordManager.h"
 #import "dispatch/dispatch.h"
 
 @interface GeoChatManager() <NSURLSessionDataDelegate>
@@ -34,7 +33,6 @@
 @property (nonatomic, strong) NSMutableArray *joinedRooms;
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, strong) NSString *refreshToken;
-@property (nonatomic, strong) UYLPasswordManager *manager;
 
 @end
 
@@ -70,7 +68,6 @@ dispatch_queue_t kBgQueue;
         NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
         _urlSession = [NSURLSession sessionWithConfiguration:sessionConfig delegate:self delegateQueue:nil];
         //_urlSession = [NSURLSession sessionWithConfiguration:sessionConfig];
-        _manager = [UYLPasswordManager sharedInstance];
         kBgQueue = dispatch_queue_create("com.MosRedRocket.GeoChatManager.bgqueue", NULL);
     }
     
@@ -176,8 +173,8 @@ dispatch_queue_t kBgQueue;
 //login/signup after facebook auth using authToken
 - (void)loginWithFacebookID:(NSString *)fbToken
 {
-    NSDictionary *paramDict = @{@"client_id": ClientID, @"client_secrect": ClientSecret, @"grant_type": @"assertion", @"assertion": fbToken};
-    
+   // NSDictionary *paramDict = @{@"client_id": ClientID, @"client_secrect": ClientSecret, @"grant_type": @"assertion", @"assertion": fbToken};
+    /*
     [self sendPostRequestForEndpoint:kOAuthEndpoint withParameters:paramDict completion:^(id responseItem, NSURLResponse *response, NSError *error) {
         if (!error) {
             NSDictionary *temp = (NSDictionary *)responseItem;
@@ -191,6 +188,7 @@ dispatch_queue_t kBgQueue;
             NSLog(@"There was an error with logging in...");
         }
     }];
+     */
     
     /*
     [self sendPostRequestForEndpoint:kOAuthEndpoint withParameters:paramDict completion:^(id responseItem, NSURLResponse *response, NSError *error) {
@@ -435,6 +433,11 @@ dispatch_queue_t kBgQueue;
             }
         }
     }];
+}
+
+- (void)logout
+{
+    
 }
 
 @end
