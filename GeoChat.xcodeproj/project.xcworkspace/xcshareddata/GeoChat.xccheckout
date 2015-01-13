@@ -14,11 +14,11 @@
 		<string>https://github.com/iMuzz/ios-geochat.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GeoChat/GeoChat.xcodeproj</string>
+	<string>GeoChat.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1E864EB4BEB63E0486DED0C3240ED733850B9C32</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/iMuzz/ios-geochat.git</string>
