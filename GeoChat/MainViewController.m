@@ -152,7 +152,8 @@
 
 #pragma mark - CLLocation Manager
 
-- (void) checkStatus{
+- (void) checkStatus
+{
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
     switch (status) {
         case kCLAuthorizationStatusNotDetermined:
@@ -170,17 +171,19 @@
             break;
             
         case kCLAuthorizationStatusAuthorizedAlways:
-            NSLog(@"We cool breh");
+            [self setUpLocationServies];
             break;
             
         case kCLAuthorizationStatusAuthorizedWhenInUse:
+            [self setUpLocationServies];
             break;
         default:
             break;
     }
 }
 
--(void) presentSettingsPrompt{
+- (void) presentSettingsPrompt
+{
     self.locationSettingsAlert = [UIAlertController alertControllerWithTitle: @"Location Services"
                                                                      message: @"In order to join chatrooms in your area please navigate to the settings application and allow us to use your location."
                                                               preferredStyle: UIAlertControllerStyleAlert];
@@ -197,4 +200,20 @@
     [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
     
 }
+
+- (void) setUpLocationServies
+{
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *currentLocation = [locations lastObject];
+    NSString *latitude = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
+    NSLog(@"Latitude: %@", latitude);
+    NSLog(@"Longitude: %@", longitude);
+}
+
 @end
