@@ -151,36 +151,6 @@
 
 #pragma mark - CLLocation Manager
 
-//- (void) checkStatus
-//{
-//    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-//    switch (status) {
-//        case kCLAuthorizationStatusNotDetermined:
-//            [self.locationManager requestAlwaysAuthorization];
-//            break;
-//        
-//        case kCLAuthorizationStatusDenied: {
-//            //go to settings app
-//            [self presentSettingsPrompt];
-//            break;
-//        }
-//        case kCLAuthorizationStatusRestricted:
-//            //go to settings app
-//            [self presentSettingsPrompt];
-//            break;
-//            
-//        case kCLAuthorizationStatusAuthorizedAlways:
-//            [self setUpLocationServies];
-//            break;
-//            
-//        case kCLAuthorizationStatusAuthorizedWhenInUse:
-//            [self setUpLocationServies];
-//            break;
-//        default:
-//            break;
-//    }
-//}
-
 - (void) presentSettingsPrompt
 {
     self.locationSettingsAlert = [UIAlertController alertControllerWithTitle: @"Location Services"
