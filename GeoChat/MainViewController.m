@@ -44,8 +44,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addRoom)];
     
     //locationManager
-    self.locationManager = [[CLLocationManager alloc] init];
-    [self checkStatus];
+    [self setUpLocationServies];
 }
 
 - (void)addRoom
@@ -152,35 +151,35 @@
 
 #pragma mark - CLLocation Manager
 
-- (void) checkStatus
-{
-    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-    switch (status) {
-        case kCLAuthorizationStatusNotDetermined:
-            [self.locationManager requestAlwaysAuthorization];
-            break;
-        
-        case kCLAuthorizationStatusDenied: {
-            //go to settings app
-            [self presentSettingsPrompt];
-            break;
-        }
-        case kCLAuthorizationStatusRestricted:
-            //go to settings app
-            [self presentSettingsPrompt];
-            break;
-            
-        case kCLAuthorizationStatusAuthorizedAlways:
-            [self setUpLocationServies];
-            break;
-            
-        case kCLAuthorizationStatusAuthorizedWhenInUse:
-            [self setUpLocationServies];
-            break;
-        default:
-            break;
-    }
-}
+//- (void) checkStatus
+//{
+//    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+//    switch (status) {
+//        case kCLAuthorizationStatusNotDetermined:
+//            [self.locationManager requestAlwaysAuthorization];
+//            break;
+//        
+//        case kCLAuthorizationStatusDenied: {
+//            //go to settings app
+//            [self presentSettingsPrompt];
+//            break;
+//        }
+//        case kCLAuthorizationStatusRestricted:
+//            //go to settings app
+//            [self presentSettingsPrompt];
+//            break;
+//            
+//        case kCLAuthorizationStatusAuthorizedAlways:
+//            [self setUpLocationServies];
+//            break;
+//            
+//        case kCLAuthorizationStatusAuthorizedWhenInUse:
+//            [self setUpLocationServies];
+//            break;
+//        default:
+//            break;
+//    }
+//}
 
 - (void) presentSettingsPrompt
 {
@@ -203,9 +202,9 @@
 
 - (void) setUpLocationServies
 {
+    self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
-    [self.locationManager startUpdatingLocation];
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 }
 
 - (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
@@ -216,4 +215,32 @@
     NSLog(@"Longitude: %@", longitude);
 }
 
+- (void) locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
+    NSLog(@"This method is getting called.");
+
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+            [self.locationManager requestAlwaysAuthorization];
+            break;
+            
+        case kCLAuthorizationStatusDenied: {
+            [self presentSettingsPrompt];
+            break;
+        }
+        case kCLAuthorizationStatusRestricted:
+            [self presentSettingsPrompt];
+            break;
+            
+        case kCLAuthorizationStatusAuthorizedAlways:
+            [self.locationManager startUpdatingLocation];
+            break;
+            
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            [self.locationManager startUpdatingLocation];
+            break;
+        default:
+            break;
+    }
+}
 @end
