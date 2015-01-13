@@ -124,31 +124,31 @@
 
 #pragma mark - Alert view delegate
 
-//- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-//{
-//    switch (buttonIndex) {
-//        case 0: {
-//            NSLog(@"First");
-//        }
-//            break;
-//            
-//        case 1: {
-//            NSLog(@"Second");
-//            [[FBSession activeSession] closeAndClearTokenInformation];
-//            if ([AFOAuthCredential deleteCredentialWithIdentifier:@"OAuthTokenIdentifier"]) {
-//                LoginViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
-//                [self.navigationController presentViewController:controller animated:NO completion:nil];
-//            } else {
-//                NSLog(@"Something went wrong with deleting the credentials...");
-//            }
-//            
-//        }
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//}
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0: {
+            NSLog(@"First");
+        }
+            break;
+            
+        case 1: {
+            NSLog(@"Second");
+            [[FBSession activeSession] closeAndClearTokenInformation];
+            if ([AFOAuthCredential deleteCredentialWithIdentifier:@"OAuthTokenIdentifier"]) {
+                LoginViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
+                [self.navigationController presentViewController:controller animated:NO completion:nil];
+            } else {
+                NSLog(@"Something went wrong with deleting the credentials...");
+            }
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 
 #pragma mark - CLLocation Manager
 
@@ -161,18 +161,12 @@
         
         case kCLAuthorizationStatusDenied: {
             //go to settings app
-            self.locationSettingsAlert = [UIAlertController alertControllerWithTitle:@"Location Services" message:@"In order to join chatrooms in your area please navigate to the settings application and allow us to use your location." preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *settings = [UIAlertAction actionWithTitle:@"Settings" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
-                NSURL *settingsUrl = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-                [[UIApplication sharedApplication]openURL:settingsUrl];
-            }];
-            [self.locationSettingsAlert addAction:settings];
-            [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
-            
+            [self presentSettingsPrompt];
             break;
         }
         case kCLAuthorizationStatusRestricted:
             //go to settings app
+            [self presentSettingsPrompt];
             break;
             
         case kCLAuthorizationStatusAuthorizedAlways:
@@ -186,4 +180,21 @@
     }
 }
 
+-(void) presentSettingsPrompt{
+    self.locationSettingsAlert = [UIAlertController alertControllerWithTitle: @"Location Services"
+                                                                     message: @"In order to join chatrooms in your area please navigate to the settings application and allow us to use your location."
+                                                              preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *settings = [UIAlertAction actionWithTitle: @"Settings"
+                                                       style: UIAlertActionStyleCancel
+                                                     handler:^(UIAlertAction *action) {
+        NSURL *settingsUrl = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication]openURL:settingsUrl];
+    }];
+    
+    [self.locationSettingsAlert addAction:settings];
+    
+    [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
+    
+}
 @end
