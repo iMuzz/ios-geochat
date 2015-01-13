@@ -159,14 +159,18 @@
             [self.locationManager requestAlwaysAuthorization];
             break;
         
-        case kCLAuthorizationStatusDenied:
+        case kCLAuthorizationStatusDenied: {
             //go to settings app
-            //create and present locationSettings alert view
-            self.locationSettingsAlert = [UIAlertController alertControllerWithTitle:@"My Alert" message:@"This is an alert" preferredStyle:UIAlertControllerStyleAlert];
+            self.locationSettingsAlert = [UIAlertController alertControllerWithTitle:@"Location Services" message:@"In order to join chatrooms in your area please navigate to the settings application and allow us to use your location." preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *settings = [UIAlertAction actionWithTitle:@"Settings" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action){
+                NSURL *settingsUrl = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                [[UIApplication sharedApplication]openURL:settingsUrl];
+            }];
+            [self.locationSettingsAlert addAction:settings];
             [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
             
             break;
-        
+        }
         case kCLAuthorizationStatusRestricted:
             //go to settings app
             break;
