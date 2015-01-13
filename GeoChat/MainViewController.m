@@ -14,12 +14,13 @@
 #import "AddRoomViewController.h"
 #import "ProfileViewController.h"
 
-@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
+@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *roomItems;
 @property (nonatomic, strong) NSMutableArray *joinedRooms;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndictor;
+@property (nonatomic, strong) UIAlertController *locationSettingsAlert;
 
 @end
 
@@ -44,7 +45,7 @@
     
     //locationManager
     self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestAlwaysAuthorization];
+    [self checkStatus];
 }
 
 - (void)addRoom
@@ -123,32 +124,62 @@
 
 #pragma mark - Alert view delegate
 
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    switch (buttonIndex) {
-        case 0: {
-            NSLog(@"First");
-        }
+//- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+//{
+//    switch (buttonIndex) {
+//        case 0: {
+//            NSLog(@"First");
+//        }
+//            break;
+//            
+//        case 1: {
+//            NSLog(@"Second");
+//            [[FBSession activeSession] closeAndClearTokenInformation];
+//            if ([AFOAuthCredential deleteCredentialWithIdentifier:@"OAuthTokenIdentifier"]) {
+//                LoginViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
+//                [self.navigationController presentViewController:controller animated:NO completion:nil];
+//            } else {
+//                NSLog(@"Something went wrong with deleting the credentials...");
+//            }
+//            
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//}
+
+#pragma mark - CLLocation Manager
+
+- (void) checkStatus{
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+            [self.locationManager requestAlwaysAuthorization];
+            break;
+        
+        case kCLAuthorizationStatusDenied:
+            //go to settings app
+            //create and present locationSettings alert view
+            self.locationSettingsAlert = [UIAlertController alertControllerWithTitle:@"My Alert" message:@"This is an alert" preferredStyle:UIAlertControllerStyleAlert];
+            [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
+            
+            break;
+        
+        case kCLAuthorizationStatusRestricted:
+            //go to settings app
             break;
             
-        case 1: {
-            NSLog(@"Second");
-            [[FBSession activeSession] closeAndClearTokenInformation];
-            if ([AFOAuthCredential deleteCredentialWithIdentifier:@"OAuthTokenIdentifier"]) {
-                LoginViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
-                [self.navigationController presentViewController:controller animated:NO completion:nil];
-            } else {
-                NSLog(@"Something went wrong with deleting the credentials...");
-            }
-            
-        }
+        case kCLAuthorizationStatusAuthorizedAlways:
+            NSLog(@"We cool breh");
             break;
             
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            break;
         default:
             break;
     }
 }
-
-#pragma mark - CLLocation Manager
 
 @end
