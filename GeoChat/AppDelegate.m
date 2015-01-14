@@ -18,6 +18,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) MMDrawerController *drawerController;
+
 @end
 
 @implementation AppDelegate
@@ -46,16 +48,16 @@
     AddRoomViewController *rightVC = [[AddRoomViewController alloc] init];
     UINavigationController *rightNav = [[UINavigationController alloc] initWithRootViewController:rightVC];
     
-    MMDrawerController * drawerController = [[MMDrawerController alloc]
+    self.drawerController = [[MMDrawerController alloc]
                                              initWithCenterViewController:homeNav
                                              leftDrawerViewController:leftNav
                                              rightDrawerViewController:rightNav];
-    [drawerController setMaximumLeftDrawerWidth:200.0];
-    [drawerController setMaximumRightDrawerWidth:280.0];
-    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    [self.drawerController setMaximumLeftDrawerWidth:200.0];
+    [self.drawerController setMaximumRightDrawerWidth:280.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
-    [drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+    [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
          MMDrawerControllerDrawerVisualStateBlock block;
          block = [[MMExampleDrawerVisualStateManager sharedManager]
                   drawerVisualStateBlockForDrawerSide:drawerSide];
@@ -63,7 +65,7 @@
              block(drawerController, drawerSide, percentVisible);
          }
      }];
-    self.window.rootViewController = drawerController;
+    self.window.rootViewController = self.drawerController;
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

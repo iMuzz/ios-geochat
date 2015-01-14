@@ -13,6 +13,7 @@
 #import "MainViewController.h"
 #import "AddRoomViewController.h"
 #import "ProfileViewController.h"
+#import "UIViewController+MMDrawerController.h"
 
 @interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate, UIAlertViewDelegate>
 
@@ -49,17 +50,20 @@
 
 - (void)addRoom
 {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    AddRoomViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addRoomView"];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    [self.navigationController presentViewController:navController animated:YES completion:nil];
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+
+//    NSLog(@"%s", __PRETTY_FUNCTION__);
+//    AddRoomViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addRoomView"];
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+//    [self.navigationController presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)showSettings
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Options" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Show profile", @"Logout", nil];
-    
-    [actionSheet showInView:self.view];
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+//    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Options" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Show profile", @"Logout", nil];
+//    
+//    [actionSheet showInView:self.view];
 }
 
 #pragma mark - Table view data source
