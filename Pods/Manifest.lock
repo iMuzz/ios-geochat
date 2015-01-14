@@ -31,6 +31,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - AFOAuth2Manager (~> 2.0.0)
   - JSQMessagesViewController
+  - MMDrawerController (= 0.5.7)
   - NSHash (~> 1.0.1)
 
 SPEC CHECKSUMS:

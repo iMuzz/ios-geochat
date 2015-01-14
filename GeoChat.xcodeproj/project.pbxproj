@@ -67,6 +67,12 @@
 		96C5D7341A64F13200A87D28 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A62FCA1D7E2C900FECDC0FF4 /* Pods-GeoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BECA7C351FEDD1FD50636D0C /* Pods-GeoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.release.xcconfig"; sourceTree = "<group>"; };
+		C43E4B6D1A66074B007A56B2 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		C43E4B6E1A66074B007A56B2 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		C43E4B701A660B5A007A56B2 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		C43E4B711A660B5A007A56B2 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		C43E4B731A660D8A007A56B2 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		C43E4B741A660D8A007A56B2 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		C4A253771A5E2A7C00D42F2F /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A2537B1A5E2A7C00D42F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A2537C1A5E2A7C00D42F2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -178,6 +184,12 @@
 				04A8FF2E1A5FAFF600E638E8 /* API Manager */,
 				C4A2537E1A5E2A7C00D42F2F /* AppDelegate.h */,
 				C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */,
+				C43E4B731A660D8A007A56B2 /* MMExampleDrawerVisualStateManager.h */,
+				C43E4B741A660D8A007A56B2 /* MMExampleDrawerVisualStateManager.m */,
+				C43E4B6D1A66074B007A56B2 /* LeftViewController.h */,
+				C43E4B6E1A66074B007A56B2 /* LeftViewController.m */,
+				C43E4B701A660B5A007A56B2 /* RightViewController.h */,
+				C43E4B711A660B5A007A56B2 /* RightViewController.m */,
 				C4A253871A5E2A7C00D42F2F /* Main.storyboard */,
 				C4A253AB1A5E4C0900D42F2F /* LoginViewController.h */,
 				C4A253AC1A5E4C0900D42F2F /* LoginViewController.m */,
@@ -368,11 +380,14 @@
 				042E53831A608211001512A7 /* AddRoomViewController.m in Sources */,
 				04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */,
 				042E53801A6081AC001512A7 /* ProfileViewController.m in Sources */,
+				C43E4B721A660B5A007A56B2 /* RightViewController.m in Sources */,
 				C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */,
 				04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */,
 				C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */,
+				C43E4B6F1A66074B007A56B2 /* LeftViewController.m in Sources */,
 				04A8FF271A5FAED600E638E8 /* MainViewController.m in Sources */,
 				C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */,
+				C43E4B751A660D8A007A56B2 /* MMExampleDrawerVisualStateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

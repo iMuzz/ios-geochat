@@ -14,12 +14,13 @@
 #import "AddRoomViewController.h"
 #import "ProfileViewController.h"
 
-@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
+@interface MainViewController () <CLLocationManagerDelegate, UIActionSheetDelegate, UIAlertViewDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *roomItems;
 @property (nonatomic, strong) NSMutableArray *joinedRooms;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndictor;
+@property (nonatomic, strong) UIAlertController *locationSettingsAlert;
 
 @end
 
@@ -42,6 +43,8 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"System-settings-icon"] style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addRoom)];
     
+    //locationManager
+    [self setUpLocationServies];
 }
 
 - (void)addRoom
@@ -146,4 +149,68 @@
     }
 }
 
+#pragma mark - CLLocation Manager
+
+- (void) presentSettingsPrompt
+{
+    self.locationSettingsAlert = [UIAlertController alertControllerWithTitle: @"Location Services"
+                                                                     message: @"In order to join chatrooms in your area please navigate to the settings application and allow us to use your location."
+                                                              preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *settings = [UIAlertAction actionWithTitle: @"Settings"
+                                                       style: UIAlertActionStyleCancel
+                                                     handler:^(UIAlertAction *action) {
+        NSURL *settingsUrl = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication]openURL:settingsUrl];
+    }];
+    
+    [self.locationSettingsAlert addAction:settings];
+    
+    [self presentViewController: self.locationSettingsAlert animated:YES completion:nil];
+    
+}
+
+- (void) setUpLocationServies
+{
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+}
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *currentLocation = [locations lastObject];
+    NSString *latitude = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%.8f",currentLocation.coordinate.longitude];
+    NSLog(@"Latitude: %@", latitude);
+    NSLog(@"Longitude: %@", longitude);
+}
+
+- (void) locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
+    NSLog(@"This method is getting called.");
+
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+            [self.locationManager requestAlwaysAuthorization];
+            break;
+            
+        case kCLAuthorizationStatusDenied: {
+            [self presentSettingsPrompt];
+            break;
+        }
+        case kCLAuthorizationStatusRestricted:
+            [self presentSettingsPrompt];
+            break;
+            
+        case kCLAuthorizationStatusAuthorizedAlways:
+            [self.locationManager startUpdatingLocation];
+            break;
+            
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            [self.locationManager startUpdatingLocation];
+            break;
+        default:
+            break;
+    }
+}
 @end

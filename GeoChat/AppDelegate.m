@@ -10,6 +10,11 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "MainViewController.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "MMDrawerController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -20,8 +25,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
-    [FBLoginView class];
+//    [FBLoginView class];
+//    
+//    BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
+//    
+//    NSString *storyboardID = credAvailable ? @"mainView" : @"loginView";
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
+//    
+//    self.window.rootViewController = navController;
     
     NSString *storyboardID;
     

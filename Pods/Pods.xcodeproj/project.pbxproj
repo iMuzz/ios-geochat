@@ -74,7 +74,9 @@
 		</dict>
 		<key>05C3CCA0485855027DEFA01A</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
 				<string>12A628124DBD3423E37A402F</string>
 				<string>C6F0A940479BC1CCB04DC532</string>
@@ -95,7 +97,32 @@
 				<string>7D9056D0E2AA3B0E376A8037</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0A7741A314C88B6BBB0847E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F50B59B3E5C414940F627D51</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0A89183FA7A823E3F694B595</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7783655EF95BC6A814B21138</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0AC5D6B97969E3BE668C1EAC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
 			<key>name</key>
 			<string>UIKit</string>
 			<key>sourceTree</key>
@@ -322,7 +349,9 @@
 			<key>fileRef</key>
 			<string>3DDC7F54415A1CCCCECE45C7</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>13FDF482494C56F9422E2887</key>
 		<dict>
@@ -351,8 +380,8 @@
 		</dict>
 		<key>14923AAEF5F29F860815F819</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>containerPortal</key>
+			<string>CDC145E786939CB8EC0BA9E3</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -366,8 +395,8 @@
 		</dict>
 		<key>15830A52317EACAC6E3B9F31</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>22805D15F22F7C62EF7A25E1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -381,8 +410,48 @@
 		</dict>
 		<key>16929030AB4E34659380311A</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>351E801A692A7DA65BBB9FB7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-GeoChat-MMDrawerController/Pods-GeoChat-MMDrawerController-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
@@ -406,8 +475,8 @@
 		</dict>
 		<key>18956DBC5720D8E4AF842ABB</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>E16AD3D17F7B7D0CBED8F2A6</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -440,8 +509,20 @@
 		</dict>
 		<key>1AFCD79B68C9C83C0E33CB6E</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildConfigurationList</key>
+			<string>F196ACB7289A7D567C393FD8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>72E464AFCA8ECAF759FAA55D</string>
+				<string>554CBB01F8388B37ACD7D866</string>
+				<string>8A325D3A09540A0D8440F4A8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>70C7A4BB62A7D6F4A0199FD5</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -578,7 +659,13 @@
 			<key>fileRef</key>
 			<string>763A77E1D72116A938687A68</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-GeoChat-JSQSystemSoundPlayer</string>
+			<key>target</key>
+			<string>BFE90E8CF39807B8F24C4D09</string>
+			<key>targetProxy</key>
+			<string>ED6ECAF0EB4D2B81425D804E</string>
 		</dict>
 		<key>2097BE1D62FB51DD5B461E9E</key>
 		<dict>
@@ -707,9 +794,13 @@
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
 				<string>NO</string>
 				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
+				<string>NO</string>
 				<key>DSTROOT</key>
 				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
@@ -718,16 +809,6 @@
 				<string>$(BUILT_PRODUCTS_DIR)</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
@@ -740,8 +821,6 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
 			</dict>
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
@@ -753,7 +832,15 @@
 			<key>fileRef</key>
 			<string>3312684ACD23D0EBA20C5110</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSQMessagesMediaPlaceholderView.m</string>
+			<key>path</key>
+			<string>JSQMessagesViewController/Views/JSQMessagesMediaPlaceholderView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>28A8FE6C549CC2E47A74BE35</key>
 		<dict>
@@ -818,7 +905,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>JSQMessagesBubbleImageFactory.m</string>
 			<key>path</key>
@@ -851,7 +938,15 @@
 			<key>fileRef</key>
 			<string>64260305B5C4A6968BF2BF4E</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-GeoChat-AFNetworking</string>
+			<key>productName</key>
+			<string>Pods-GeoChat-AFNetworking</string>
+			<key>productReference</key>
+			<string>A79E7F22E98A1B720B590735</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>2ED5C117274B0068A8077AF9</key>
 		<dict>
@@ -1092,8 +1187,6 @@
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>AFSecurityPolicy.m</string>
 			<key>path</key>
@@ -1186,7 +1279,15 @@
 			<key>fileRef</key>
 			<string>2323D063FEA542535FEFCDF0</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>42C060BB4C1F2077E38CFC8A</key>
 		<dict>
@@ -1306,7 +1407,11 @@
 			<key>fileRef</key>
 			<string>90B6EC3DF3374D702845DF38</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>45F2112ABC6F148F166998FF</key>
 		<dict>
@@ -1402,7 +1507,7 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>he.lproj</string>
 			<key>path</key>
 			<string>../Target Support Files/Pods-GeoChat-JSQMessagesViewController</string>
 			<key>sourceTree</key>
@@ -1467,7 +1572,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSQMessagesComposerTextView.h</string>
 			<key>path</key>
@@ -1674,12 +1779,15 @@
 		</dict>
 		<key>5730162262BD01C99BFA029D</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>593EAFC8DB8FAF3C75E3DEEE</string>
+				<string>D091BF927F6DE1CC6A0748F5</string>
+				<string>8CA603E9D4CF1D41584F19ED</string>
+				<string>52910E26440848C60CB92510</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
 			<string>UIImageView+AFNetworking.h</string>
 			<key>path</key>
@@ -1775,8 +1883,6 @@
 		</dict>
 		<key>59106DC14715540FDDB9BA86</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -1784,7 +1890,7 @@
 			<key>path</key>
 			<string>Pods-GeoChat-AFNetworking-dummy.m</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>5A2BC9E0B8A9CC1156FC7E14</key>
 		<dict>
@@ -1956,8 +2062,8 @@
 		</dict>
 		<key>5E30001DF39016DE792A1A0C</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>50058A322FC81884D7B583FF</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -1969,8 +2075,8 @@
 		</dict>
 		<key>5FAAA2DF07DD7C0EB005199E</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>F0C7D851F7B23796749B2A3E</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -2056,6 +2162,13 @@
 		</dict>
 		<key>683F2017FAD50BEC14D3F6C7</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>9417D772302442178E62357D</string>
+				<string>312E3B86E1EC7CFE83B39F75</string>
+				<string>5DA3B91E84F745BADA8B4891</string>
+				<string>0EBC66155CB259EE3D143515</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -2175,9 +2288,7 @@
 		</dict>
 		<key>6C77796B73196AE51D893C12</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
 				<string>9F512EFFF3B74531FC0C1CD9</string>
 				<string>E7E2A315A18E9C5017A1D800</string>
@@ -2215,7 +2326,13 @@
 			<key>fileRef</key>
 			<string>81ADF47E25166B3D979C4D34</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-GeoChat.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6EFC3EE0D39D8F62A2B99EA1</key>
 		<dict>
@@ -2242,7 +2359,15 @@
 			<key>fileRef</key>
 			<string>28A8FE6C549CC2E47A74BE35</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AudioToolbox.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>6FA9C5ECE2C6D6EF46A7CCDF</key>
 		<dict>
@@ -2321,7 +2446,7 @@
 				<string>YES</string>
 			</dict>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
@@ -2345,7 +2470,67 @@
 			<key>fileRef</key>
 			<string>BC3A25BF59F866237D7CCB34</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-GeoChat-AFOAuth2Manager.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58A9AA9893AE3768819F96F1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B2EB6F13B4E226CC80F9E113</string>
+				<string>EEE40181F569CF5AD9A3D9EC</string>
+				<string>10B65DD70FAB6CB701062EE0</string>
+				<string>1F85B8F1991CA5E1ECCFBF40</string>
+				<string>2D8EDEA1F08D6123FA98F2AB</string>
+				<string>1324B44985AB734817345DDF</string>
+				<string>5CAA8B1C5C12B8A264B654B2</string>
+				<string>D697C8443FE9623791E08662</string>
+				<string>ED3D0F319DCC843B34D52F1F</string>
+				<string>B7A5C14ADDFD5970A8F21416</string>
+				<string>EC5AA3A91C058DAFF1039FF5</string>
+				<string>96927238057F67559498A368</string>
+				<string>70ACD5EF22F6E61704C8DD87</string>
+				<string>CD9D39C24919C139C256600C</string>
+				<string>9C34A668E64BDA4A416D8081</string>
+				<string>B779108A1C0924E3F3D288AA</string>
+				<string>680BD2FCC310D247975E88A2</string>
+				<string>A2934190A3DFC49279D1E5F0</string>
+				<string>93493DE10B15131469B66348</string>
+				<string>8521F04D774C5567EEE62BB2</string>
+				<string>9538D37244ED8B6762449EF3</string>
+				<string>321CB780711DCD06707C8FCE</string>
+				<string>0A89183FA7A823E3F694B595</string>
+				<string>40002374169DDCD126363A7E</string>
+				<string>373A81DEAD40BDA915F6E99E</string>
+				<string>5DA005D8AE65FDB13091A99F</string>
+				<string>4946983B457C0F660E96C161</string>
+				<string>EE251B90A0C02640A12D0A83</string>
+				<string>96FC9B53B3F63510F01BC4C3</string>
+				<string>D9182B549C6E6AC3264029D6</string>
+				<string>FCFF21139224C698273A2F27</string>
+				<string>C09E17C318C9FB94E12C1156</string>
+				<string>B20AD757A5401589E53CE695</string>
+				<string>2896D4DD301CEF1C1A2B90FB</string>
+				<string>FF757971253C682A60596036</string>
+				<string>FA672ADDF899CDB493B81D1D</string>
+				<string>820EEC8D7955AB04E868729C</string>
+				<string>DC3D82532A679C408A4751A5</string>
+				<string>6D4B8770400A5148EF76E453</string>
+				<string>C3922E510F85CA4B32AAB9AB</string>
+				<string>1A4675C53FBF3C6B090A984F</string>
+				<string>8458C55D6BF525DD6CA17BC9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>74227760666DF220888FEF67</key>
 		<dict>
@@ -2354,7 +2539,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>JSQMessagesCollectionView.m</string>
 			<key>path</key>
@@ -2413,8 +2598,16 @@
 		</dict>
 		<key>748A2306E03D74820EB7BBAD</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>A3BAA9789F1EF937EF745001</string>
+				<string>CD325D62201EC3A691643224</string>
+				<string>4FE835AFE831F267873ED6AC</string>
+				<string>A0A633FF9BC760B107A2B86F</string>
+				<string>A1E13F28CF20FE7F3D02C7C9</string>
+				<string>50AB45FA84A98522E2E7833F</string>
+				<string>249480D5D1E4605D169FE5E0</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -2468,7 +2661,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>JSQMessagesMediaViewBubbleImageMasker.m</string>
 			<key>path</key>
@@ -2536,8 +2729,8 @@
 		</dict>
 		<key>7BC97FEBAF946C2B982C29D5</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>2918F4DDD56FD2A518638C4B</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -2569,7 +2762,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSQSystemSoundPlayer.h</string>
 			<key>path</key>
@@ -2736,7 +2929,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>UIView+JSQMessages.h</string>
 			<key>path</key>
@@ -2779,15 +2972,11 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>../Podfile</string>
+			<string>Pods-GeoChat-JSQSystemSoundPlayer.xcconfig</string>
 			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>85912C25019ACCB75B0DC882</key>
 		<dict>
@@ -2821,6 +3010,8 @@
 		</dict>
 		<key>88841562A565E6D39127A4E0</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXTargetDependency</string>
 			<key>target</key>
@@ -2877,8 +3068,13 @@
 		</dict>
 		<key>899CE9BAA10AF7A80CE1E5DC</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8321B96EC2734A21E2F60D1C</string>
+				<string>03DBC83A86A081ABD1CCE515</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3017,8 +3213,8 @@
 		</dict>
 		<key>90B6EC3DF3374D702845DF38</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>7B5063BE80167DE82B1DE8E4</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3032,12 +3228,10 @@
 		</dict>
 		<key>90D24B07DA03BC0511B779EF</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
 			<string>JSQMessagesCollectionViewCellOutgoing.h</string>
 			<key>path</key>
@@ -3103,8 +3297,8 @@
 		</dict>
 		<key>9334B8F4E08B31CA7D3B8583</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>E04D5B1B5B4BE0C5E83F8752</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3160,10 +3354,50 @@
 		</dict>
 		<key>968E13B29AFB819677FE414B</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>4B4572D4ECA6EE380F99A11C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-GeoChat-JSQMessagesViewController/Pods-GeoChat-JSQMessagesViewController-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>ru.lproj</string>
 			<key>path</key>
@@ -3180,8 +3414,8 @@
 		</dict>
 		<key>98137C9F9898857189AE4C5B</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>1127F1ED2132D59136DB4A20</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3207,8 +3441,8 @@
 		</dict>
 		<key>9A17413723C7C507397DF247</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>32B873C2D50D304CDD36033C</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3659,9 +3893,13 @@
 				<string>YES</string>
 			</dict>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-GeoChat-JSQSystemSoundPlayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A6F9584A67E1EC698E648878</key>
 		<dict>
@@ -3765,7 +4003,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Pods-GeoChat-NSHash-Private.xcconfig</string>
 			<key>sourceTree</key>
@@ -3861,14 +4099,18 @@
 				<string>1FB25194A13439EC6C604145</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFSecurityPolicy.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFSecurityPolicy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AF290B56695B01E34CE29D61</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -3878,7 +4120,7 @@
 			<key>path</key>
 			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewLayoutAttributes.m</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>AF74E87B7B25637B69505192</key>
 		<dict>
@@ -4075,7 +4317,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>AFURLResponseSerialization.m</string>
 			<key>path</key>
@@ -4151,7 +4393,9 @@
 			<key>fileRef</key>
 			<string>683F2017FAD50BEC14D3F6C7</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>B4BC7BE2B46AD0109B55F3EC</key>
 		<dict>
@@ -4192,7 +4436,7 @@
 			<key>fileRef</key>
 			<string>683F2017FAD50BEC14D3F6C7</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>B726B47B6A59068B36630C49</key>
 		<dict>
@@ -4390,8 +4634,8 @@
 		</dict>
 		<key>BC3A25BF59F866237D7CCB34</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>60C58CD42D7B9CEE2CB105D4</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -4658,10 +4902,6 @@
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>C1776295AF500EAEAC0D33AA</key>
 		<dict>
@@ -4713,12 +4953,28 @@
 		</dict>
 		<key>C6F0A940479BC1CCB04DC532</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>5ECB9DFFB2D8637EB346EF9E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D9182B549C6E6AC3264029D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2AA1730E4BFB4E5ED1E4389</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D9367F08AAFEF4A6F44BBCA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F26ECE095C726419AD2439E9</string>
+				<string>F50B59B3E5C414940F627D51</string>
+				<string>A6B579670A65924322811403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
 			<key>name</key>
 			<string>AFNetworkActivityIndicatorManager.m</string>
 			<key>path</key>
@@ -4732,8 +4988,6 @@
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>AFHTTPRequestOperation.m</string>
 			<key>path</key>
@@ -4789,7 +5043,40 @@
 			<key>name</key>
 			<string>Serialization</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>DE2D71243531BC7C180F9A29</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D43806BFB3247BDF3579E0A3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF0A0516EFADBFAB1D9D766B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3DAF1A4A0C70F6953E54FF81</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>DF57D40AB1FE6F1460F6CE67</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1B9DA8BA059CBF717A188238</string>
+				<string>6759CB232CAF7BE3022E69E4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>CC2915FF499EC939E9329D29</key>
 		<dict>
@@ -4798,7 +5085,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>AFHTTPSessionManager.m</string>
 			<key>path</key>
@@ -4820,7 +5107,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>AFHTTPRequestOperation.h</string>
 			<key>path</key>
@@ -4973,7 +5260,7 @@
 		</dict>
 		<key>D3DAD224B6277DCCA9DC26F1</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurations</key>
 			<array>
 				<string>2B1498D045F13107FE49809C</string>
 				<string>04D90CE6DD30512F6D39F9A2</string>
@@ -4981,6 +5268,10 @@
 				<string>46206D741517BE4BF1306BCB</string>
 				<string>078C34FCC8AF73DADE37679F</string>
 			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
@@ -5217,9 +5508,15 @@
 				<string>YES</string>
 			</dict>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>MMDrawerBarButtonItem.m</string>
+			<key>path</key>
+			<string>MMDrawerController/MMDrawerBarButtonItem.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DF713C017ABFAF6279F3524A</key>
 		<dict>
@@ -5753,8 +6050,31 @@
 		</dict>
 		<key>F60D79A568346CF52867CE5A</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>389325F2F46ADC3AC804D2F7</string>
+				<string>299238B77CEE23A0A7F3682A</string>
+				<string>F0827E0EA7F87C8AA082EE9E</string>
+				<string>33A8E71FA4A43E56ED46C768</string>
+				<string>68F8C95D150E01D81B6100AD</string>
+				<string>A9AE7BDD2276F131394EC561</string>
+				<string>0AC5D6B97969E3BE668C1EAC</string>
+				<string>CB3AF6717B1F8093EA61D201</string>
+				<string>2D2876980C53B87B85DCEAAE</string>
+				<string>FA50D5131EBFBB7B14BC37F0</string>
+				<string>A5A6B3DCFC6F9CAB3ED07B17</string>
+				<string>4CCC40EDCE39081995B2FF69</string>
+				<string>3B60B629F1039AB33EDC3947</string>
+				<string>8F6628EAD0923EB96E00B1FE</string>
+				<string>9EF8797AD82F595CDCD8210A</string>
+				<string>341DE9CA3012D3844897291D</string>
+				<string>615BEF2C4A216A69CB940861</string>
+				<string>3F987D38C9F467195A18AA33</string>
+				<string>DA2EDDBBB05B55B3EDFBB1ED</string>
+				<string>365F520459D181B96889A90A</string>
+				<string>91A3E8913A106968D5856960</string>
+				<string>314012B1BCA4ACF3169A0CE6</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
@@ -5884,6 +6204,8 @@
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>de.lproj</string>
 			<key>path</key>
@@ -5934,7 +6256,7 @@
 				<string>9B92737378314FF05CA36DD4</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
 			<string>Support Files</string>
 			<key>path</key>
@@ -5989,7 +6311,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSQMessagesCollectionViewDataSource.h</string>
 			<key>path</key>
