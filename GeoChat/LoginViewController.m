@@ -57,18 +57,7 @@
 {
     NSLog(@"%@", [[[FBSession activeSession] accessTokenData] accessToken]);
     
-    BOOL validCredentials = [AFOAuthCredential retrieveCredentialWithIdentifier:@"kOAuthTokenIdentifier"];
-    
-    if (validCredentials) {
-        NSLog(@"Logging in...");
-        [[GeoChatAPIManager sharedManager] loginWithAssertion:[[[FBSession activeSession] accessTokenData] accessToken]];
-    } else {
-        NSLog(@"Bypassing notification...");
-        MainViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-        
-        [self.navigationController presentViewController:navController animated:NO completion:nil];
-    }
+    [[GeoChatAPIManager sharedManager] loginWithAssertion:[[[FBSession activeSession] accessTokenData] accessToken]];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView

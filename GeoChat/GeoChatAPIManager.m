@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 MosRedRocket. All rights reserved.
 //
 
-#define kGeoChatEndpoint @"https://geochat-v1.herokuapp.com/"
+#define kGeoChatEndpoint @"https://geochat-v1.herokuapp.com"
 #define kOAuthTokenIdentifier @"OAuthTokenIdentifier"
 
 #import <AFNetworking/AFNetworking.h>
@@ -55,6 +55,33 @@ dispatch_queue_t kBgQueue;
     return self;
 }
 
+- (void)sendGETRequestForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+{
+    dispatch_async(kBgQueue, ^{
+        [[AFHTTPRequestOperationManager manager] GET:[NSString stringWithFormat:@"%@/%@", kGeoChatEndpoint, baseURL] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"Did finish GET with object: %@", responseObject);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Did finish GET with error: %@", error.description);
+        }];
+    });
+}
+
+- (void)sendPOSTRequestForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+{
+    dispatch_async(kBgQueue, ^{
+        [[AFHTTPRequestOperationManager manager] POST:[NSString stringWithFormat:@"%@/%@", kGeoChatEndpoint, baseURL] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"Did finish POST with object: %@", responseObject);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Did finish POST with error: %@", error.description);
+        }];
+    });
+}
+
+- (void)sendPATCHRequestForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+{
+    
+}
+
 - (void)loginWithAssertion:(NSString *)assertion
 {
     NSURL *geoChatURL = [NSURL URLWithString:kGeoChatEndpoint];
@@ -89,14 +116,7 @@ dispatch_queue_t kBgQueue;
 {
     NSDictionary *parameters = @{@"access_token":AccessToken, @"latitude":latitude, @"longitude":longitude, @"offest": @"0", @"size": @"10", @"radius": @"10"};
     
-    AFHTTPRequestOperationManager *operationManager = [AFHTTPRequestOperationManager manager];
-    dispatch_async(kBgQueue, ^{
-        [operationManager GET:[NSString stringWithFormat:@"%@api/v1/chat_rooms", kGeoChatEndpoint] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"Operation: %@\nResponse object: %@", operation.description, responseObject);
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error: %@", error.description);
-        }];
-    });
+    [self sendGETRequestForBaseURL:@"api/v1/chat_rooms" parameters:parameters];
 }
 
 - (void)fetchRoomForID:(NSString *)roomID

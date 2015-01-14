@@ -23,14 +23,23 @@
     // Override point for customization after application launch.
     [FBLoginView class];
     
-    BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
+    NSString *storyboardID;
     
-    NSString *storyboardID = credAvailable ? @"mainView" : @"loginView";
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
+    @try {
+        NSLog(@"Come on, I'm tryin here!");
+        BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
+        storyboardID = credAvailable ? @"mainView" : @"loginView";
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Exception: %@", exception);
+        storyboardID = @"loginView";
+    }
+    @finally {
+        NSLog(@"Code that always gets executed...");
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
+        self.window.rootViewController = navController;
+    }
     
-    self.window.rootViewController = navController;
-    
-     
     return YES;
 }
 

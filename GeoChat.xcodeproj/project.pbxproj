@@ -10,7 +10,6 @@
 		042E53801A6081AC001512A7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E537F1A6081AC001512A7 /* ProfileViewController.m */; };
 		042E53831A608211001512A7 /* AddRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E53821A608211001512A7 /* AddRoomViewController.m */; };
 		0437C0021A63D2D7006030B1 /* GeoChatAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437C0011A63D2D7006030B1 /* GeoChatAPIManager.m */; };
-		0437C0061A647CC5006030B1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */; };
 		04A8FF271A5FAED600E638E8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF261A5FAED600E638E8 /* MainViewController.m */; };
 		04A8FF2C1A5FAFEC00E638E8 /* GeoChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF291A5FAFEC00E638E8 /* GeoChatManager.m */; };
 		04A8FF2D1A5FAFEC00E638E8 /* GeoChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8FF2B1A5FAFEC00E638E8 /* GeoChatUser.m */; };
@@ -22,6 +21,7 @@
 		04A8FF3B1A5FB3DF00E638E8 /* System-settings-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF351A5FB3DF00E638E8 /* System-settings-icon@2x.png */; };
 		04A8FF3C1A5FB3DF00E638E8 /* System-settings-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A8FF361A5FB3DF00E638E8 /* System-settings-icon@3x.png */; };
 		21E8D90797A866748C2DD0C8 /* libPods-GeoChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */; };
+		96C5D7351A64F13200A87D28 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C5D7341A64F13200A87D28 /* FacebookSDK.framework */; };
 		C4A2537D1A5E2A7C00D42F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537C1A5E2A7C00D42F2F /* main.m */; };
 		C4A253801A5E2A7C00D42F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2537F1A5E2A7C00D42F2F /* AppDelegate.m */; };
 		C4A253831A5E2A7C00D42F2F /* GeoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4A253811A5E2A7C00D42F2F /* GeoChat.xcdatamodeld */; };
@@ -64,6 +64,7 @@
 		04A8FF351A5FB3DF00E638E8 /* System-settings-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "System-settings-icon@2x.png"; sourceTree = "<group>"; };
 		04A8FF361A5FB3DF00E638E8 /* System-settings-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "System-settings-icon@3x.png"; sourceTree = "<group>"; };
 		354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C5D7341A64F13200A87D28 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A62FCA1D7E2C900FECDC0FF4 /* Pods-GeoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BECA7C351FEDD1FD50636D0C /* Pods-GeoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoChat/Pods-GeoChat.release.xcconfig"; sourceTree = "<group>"; };
 		C4A253771A5E2A7C00D42F2F /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0437C0061A647CC5006030B1 /* FacebookSDK.framework in Frameworks */,
+				96C5D7351A64F13200A87D28 /* FacebookSDK.framework in Frameworks */,
 				04A8FF301A5FB25600E638E8 /* MapKit.framework in Frameworks */,
 				21E8D90797A866748C2DD0C8 /* libPods-GeoChat.a in Frameworks */,
 			);
@@ -142,6 +143,7 @@
 		6F71389B54F19EAC2F83DBA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96C5D7341A64F13200A87D28 /* FacebookSDK.framework */,
 				04A8FF2F1A5FB25600E638E8 /* MapKit.framework */,
 				042056FB1A5F994C000AB9C6 /* FacebookSDK.framework */,
 				354FA1921B2DA17F430ABB24 /* libPods-GeoChat.a */,
@@ -499,6 +501,7 @@
 					"$(inherited)",
 					/Users/iMuzz/Documents/FacebookSDK,
 					/Users/mac/Documents/FacebookSDK,
+					/Users/techfreak23/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = GeoChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +521,7 @@
 					"$(inherited)",
 					/Users/iMuzz/Documents/FacebookSDK,
 					/Users/mac/Documents/FacebookSDK,
+					/Users/techfreak23/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = GeoChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
