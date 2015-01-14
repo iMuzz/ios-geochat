@@ -10,6 +10,7 @@ pod 'JSQMessagesViewController'
 #pod 'SocketRocket', '~> 0.3.1-beta2'
 #pod 'Base64', '~> 1.0.1'
 pod 'NSHash', '~> 1.0.1'
+pod 'MMDrawerController', '0.5.7'
 
 end
 

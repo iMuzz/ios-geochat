@@ -10,6 +10,11 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "MainViewController.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "MMDrawerController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -20,19 +25,49 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
-    [FBLoginView class];
+//    [FBLoginView class];
+//    
+//    BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
+//    
+//    NSString *storyboardID = credAvailable ? @"mainView" : @"loginView";
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
+//    
+//    self.window.rootViewController = navController;
     
-    BOOL credAvailable = [AFOAuthCredential retrieveCredentialWithIdentifier:@"OAuthTokenIdentifier"];
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    UINavigationController *leftNav = [[UINavigationController alloc] initWithRootViewController:leftVC];
     
-    NSString *storyboardID = credAvailable ? @"mainView" : @"loginView";
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:storyboardID]];
+    MainViewController *homeVC = [[MainViewController alloc] init];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
-    self.window.rootViewController = navController;
+    RightViewController *rightVC = [[RightViewController alloc] init];
+    UINavigationController *rightNav = [[UINavigationController alloc] initWithRootViewController:rightVC];
     
-     
-    return YES;
-}
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:homeNav
+                                             leftDrawerViewController:leftNav
+                                             rightDrawerViewController:rightNav];
+    [drawerController setMaximumLeftDrawerWidth:200.0];
+    [drawerController setMaximumRightDrawerWidth:280.0];
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
+    self.window.rootViewController = drawerController;
+
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
