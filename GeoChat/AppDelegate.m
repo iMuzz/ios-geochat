@@ -13,7 +13,7 @@
 #import "MMExampleDrawerVisualStateManager.h"
 #import "MMDrawerController.h"
 #import "LeftViewController.h"
-#import "RightViewController.h"
+#import "AddRoomViewController.h"
 
 
 @interface AppDelegate ()
@@ -43,7 +43,7 @@
     MainViewController *homeVC = [[MainViewController alloc] init];
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
-    RightViewController *rightVC = [[RightViewController alloc] init];
+    AddRoomViewController *rightVC = [[AddRoomViewController alloc] init];
     UINavigationController *rightNav = [[UINavigationController alloc] initWithRootViewController:rightVC];
     
     MMDrawerController * drawerController = [[MMDrawerController alloc]
