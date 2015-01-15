@@ -16,5 +16,7 @@
 - (void)logout;
 - (void)fetchRoomsForLatitude:(NSString *)latitude longitude:(NSString *)longitude;
 - (void)fetchRoomForID:(NSString *)roomID;
+- (void)createRoom:(NSString *)name latitude:(NSString *)latitude longitude:(NSString *)longitude;
+- (void)sendMessage:(NSString *)content room:(NSString *)roomID;
 
 @end
