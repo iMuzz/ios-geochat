@@ -13,6 +13,8 @@
 #import <AFOAuth2Manager/AFOAuth2Manager.h>
 #import "GeoChatAPIManager.h"
 
+typedef void (^RequestCompletion)(id responseItem, NSError *error);
+
 @interface GeoChatAPIManager()
 
 @property (nonatomic, strong) AFHTTPRequestOperationManager *operationManager;
@@ -54,31 +56,56 @@ dispatch_queue_t kBgQueue;
     return self;
 }
 
-- (void)sendGETForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+- (void)sendGETForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters completion:(RequestCompletion)handler
 {
     dispatch_async(kBgQueue, ^{
         [self.operationManager GET:baseURL parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"Did finish GET with response object: %@", responseObject);
+            handler(responseObject, nil);
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Did finish GET with error: %@", error.description);
+            handler(nil, error);
         }];
     });
 }
 
-- (void)sendPOSTForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+- (void)sendPOSTForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters completion:(RequestCompletion)handler
 {
     dispatch_async(kBgQueue, ^{
         [self.operationManager POST:baseURL parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"Did finish POST with response object: %@", responseObject);
+            handler(responseObject, nil);
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Did finish POST with error: %@", error.description);
+            handler(nil, error);
         }];
     });
 }
 
-- (void)sendPATCHForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters
+- (void)sendPATCHForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters completion:(RequestCompletion)handler
 {
-    
+    dispatch_async(kBgQueue, ^{
+        [self.operationManager PATCH:baseURL parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"Did finish PATCH with response object: %@", responseObject);
+            handler(responseObject, nil);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Did finish PATCH with error: %@", error.description);
+            handler(nil, error);
+        }];
+    });
+}
+
+- (void)sendDELETEForBaseURL:(NSString *)baseURL parameters:(NSDictionary *)parameters completion:(RequestCompletion)handler
+{
+    dispatch_async(kBgQueue, ^{
+        [self.operationManager DELETE:baseURL parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"Did finish DELETE with response object: %@", responseObject);
+            handler(responseObject, nil);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Did finish DELETE with error: %@", error.description);
+            handler(nil, error);
+        }];
+    });
 }
 
 - (void)loginWithAssertion:(NSString *)assertion
@@ -115,10 +142,21 @@ dispatch_queue_t kBgQueue;
 {
     NSDictionary *parameters = @{@"access_token":AccessToken, @"latitude":latitude, @"longitude":longitude, @"offest": @"0", @"size": @"10", @"radius": @"10"};
     
-    [self sendGETForBaseURL:[NSString stringWithFormat:@"%@/api/vi/chat_rooms", kGeoChatEndpoint] parameters:parameters];
+    [self sendGETForBaseURL:[NSString stringWithFormat:@"%@/api/vi/chat_rooms", kGeoChatEndpoint] parameters:parameters completion:^(id responseItem, NSError *error) {
+        if (!error) {
+            NSLog(@"Response item: %@", responseItem);
+        } else {
+            NSLog(@"An error occurred...");
+        }
+    }];
 }
 
 - (void)fetchRoomForID:(NSString *)roomID
+{
+    
+}
+
+- (void)createRoomWithName:(NSString *)roomName 
 {
     
 }
